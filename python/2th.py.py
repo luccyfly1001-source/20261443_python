@@ -1,8 +1,9 @@
 print("1 - hello world")
 print(30 * 30)
 
-a = str(input("첫 번째 값 :"))
-b = str(input("두 번째 값:"))
+a = str(input("첫번째 값 :"))
+b = str(input("두번째 값 :"))
+c = str(input("세번째 값 :"))
 
 ## result = a*b 
 ## result1 = a/b 
@@ -10,4 +11,4 @@ b = str(input("두 번째 값:"))
 ## result3 = a-b 
 
 ##print(a, "*", b, "=", result)
-print(a, "and", b)
+print(a,"and", b, "and", c)
