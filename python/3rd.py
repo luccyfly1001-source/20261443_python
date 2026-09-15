@@ -11,4 +11,7 @@ result = a+b
 print(a,'+',b,'=',result)
 
 
-
+data = "안녕" + /
+"안녕" + /
+"안녕" + /
+print(data)
