@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <meta charset="UTF-8">
+    <title>적립금 계산기</title>
+</head>
+<body>
+
+
+<h2>고객 등급 및 적립율 계산</h2>
+<button onclick="calculateGrade()">가격 입력 및 등급 확인</button>
+
+<div id="result" style margin-top 20px;></div>
+
+<script>
+    function calculateGrade() {
+        var price1 = Number(prompt("첫 번째 금액을 입력하세요:"));
+        var price2 = Number(prompt("두 번째 금액을 입력하세요:"));
+        var price3 = Number(prompt("세 번째 금액을 입력하세요:"));
+
+
+        var totalPrice = price1 + price2 + price3 ;
+
+        var grade = "";
+        var rateText = '';
+        var rate = 0;
+
+
+        if(totalprice >= 50000) {
+            grade = VIP;
+            rateText = "3%";
+            rate = 0.03;
+        } else if (totalPrice >= 30000) {
+          grade = "GOLD";
+          rateText = "2%";
+          rate = 0.02;
+        } else {
+            grade = "SLIVER";
+            rateText = "1%";
+            rate = 0.01;
+
+
+        }
+
+    }
+</script>
