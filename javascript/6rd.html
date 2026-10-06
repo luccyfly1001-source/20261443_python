@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>지도</title>
+</head>
+<body>
+
+<button class="mytestbtn">지도열기</button>
+<p id="test"></p>
+
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 2; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("test").innerHTML = text;
+
+let left = "";
+let right = "";
+
+for (let i = 10; i >= 1; i--) {
+  if (i == 3) {
+    continue;
+  }
+
+  if (i >= 6) {
+    left += i + "<br>";
+  } else {
+    right += i + "<br>";
+  }
+}
+
+document.getElementById("demo").innerHTML =
+  "<div style='display:flex; gap:50px;'>" +
+  "<div>" + left + "</div>" +
+  "<div>" + right + "</div>" +
+  "</div>";
+</script>
+
+let text = ""
+let i = 0;
+let sum = 0;
+
+do {
+   sum += i;
+   text += "<br>The number is " + i;
+   i += 5;
+}
+while (i <= 100);  
+text += "<br>합계는 " + sum;
+
+document.getElementById("demo").innerHTML = text;
+
+</script>
+
+</body>
+</html>
