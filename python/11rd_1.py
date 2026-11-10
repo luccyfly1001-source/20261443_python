@@ -11,3 +11,4 @@ window = Tk()
 window.bind("<Button-1>", clickLeft)
 
 window.mainloop()
+
